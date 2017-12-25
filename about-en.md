@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-tagline: A few more words about this theme
+tagline: 一个已婚的程序员
 excerpt: >
   A few more words about this theme. This goes SEO!
 permalink: /about.html
@@ -12,8 +12,6 @@ lang: en
 order: 2
 ---
 
-This is the _Simple Blog_ Jekyll theme. You can find out more info about customizing this theme, as well as basic usage documentation, and source code at: [jekyll-theme-simple-blog](https://github.com/lorepirri/jekyll-theme-simple-blog)
-
-You can find the source code for _Jekyll_ at [jekyll](https://github.com/jekyll/jekyll)
+爱生活，爱老婆。此网站仅记录工作心得，和大家一起分享。
 
 {% include go-to-home-page.html %}
