@@ -1,5 +1,6 @@
 ---
 layout: post
+author: qutao
 title:  "centos7 自定义服务"
 date:   2017-12-22 14:25:30 +0800
 categories: soft config
