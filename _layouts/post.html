@@ -1,31 +1,39 @@
 ---
 layout: default
 ---
+<article class="post">
 
-{% include article-author-bio-small.html %}
+  <h1 class="post-title">{{ page.title }}</h1>
 
-<article itemscope itemtype="http://schema.org/BlogPosting">
+  <p class="post-meta">
+    <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%d-%m-%Y" }}</time>
 
-  <div itemprop="articleBody">
-    {% include facebook-like-post.html %}
-    <br />
+    {% if page.author %}
+      &nbsp;/&nbsp;
+      <span>{{ page.author }}</span>
+    {% endif %}
+  </p>
+
+  <div class="post-content">
+
     {{ content }}
-    <br />
-    {% include facebook-like-post.html %}
-    {% include facebook-comments.html %}
+
+    <div class="post-links">
+      {% if page.next.url %}
+        <a class="link-to-post" href="{{ page.next.url | relative_url}}">
+          <span class="link-to-post__next">&#10535; &nbsp;Next post</span>
+          <span class="link-to-post__title">{{ page.next.title }}</span>
+        </a>
+      {% endif %}
+
+      {% if page.previous.url %}
+        <a class="link-to-post" href="{{ page.previous.url | relative_url}}">
+          <span class="link-to-post__prev">&#10535; &nbsp;Previous post</span>
+          <span class="link-to-post__title">{{ page.previous.title }}</span>
+        </a>
+      {% endif %}
+    </div>
+
   </div>
-
-  {% if site.disqus.shortname %}
-    {% include disqus_comments.html %}
-  {% endif %}
-
-  {% if site.facebook.pixelcode %}
-  <!-- Facebook Pixel Code -->
-  <script>
-  fbq('track', 'ViewContent');
-  </script>
-  <!-- End Facebook Pixel Code -->
-  {% endif %}
-
 
 </article>

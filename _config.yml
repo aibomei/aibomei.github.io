@@ -8,122 +8,35 @@
 # Site settings
 title: Laughing Blog
 email: goroutine@163.com
-description: >- # this means to ignore newlines until "baseurl:"
-  I am not bad, i just did something stupid -- by one golanger
-baseurl: "" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
-url: "https://aibomei.github.io" # change this to the base hostname & protocol for your site
+description: > # this means to ignore newlines until "baseurl:"
+  I am not bad, i just did something stupid --- by one golanger
+baseurl: "" # the subpath of your site, e.g. /blog
+lang: "en"
+url: "aibomei.github.io" # the base hostname & protocol for your site
+twitter_username: aibomei
+github_username: aibomei
+disqus_username:
 
 # Build settings
 markdown: kramdown
+permalink: /:categories/:title/
 
-# Make sure to exclude 'vendor' from the build
-exclude: [vendor, "Gemfile", "Gemfile.lock"]
+# Posts settings
+future: true
+safe: false
+lsi: false
+excerpt_separator: "\n\n"
 
-# permalink: /:categories/:year/:month/:day/:title.html
-# none is equivalent to /:title.html
-# https://jekyllrb.com/docs/permalinks
-permalink: /:title.html
-
-google_analytics:
-
-# jekyll-theme-simple-blog date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-jekyll-theme-simple-blog:
-  date_format: "%b %-d, %Y"
-
-theme: # leave it empty
-
-show_post_image_posts_list: false
-
-header:
-  image: /assets/patterns/symphony.png
-
-# social
-author:
-  name: "qutao"
-  short_bio:
-    en: My roof, my rules
-    it: My roof, my rules
-  picture: assets/img/profile-60.png
-
-image: /assets/img/profile-225.png
-
-#twitter:
-#  username:
-#instagram_username:
-
-#linkedin_username: lorepirri
-
-#  site:
-facebook:
-  publisher_id: 1474191545979552
-  profile_id: 1474191545979552
-  app_id: 126080721296732
-  authors: [1474191545979552]
-  #pixelcode: 1670622619859349
+# Theme settings
+compress_html:
+  comments: ["<!-- ", " -->"]
+  clippings: all
+  endings: all
 
 
-# gitlab on site
-gitlab:
-  owner_url: https://gitlab.com/aibomei
-
-# github on site
-github:
-  owner_url: https://github.com/aibomei
+sass:
+  sass_dir: assets/_sass
+  style: compressed
 
 
-# translation
-
-t:
-  en:
-    latest-posts:  "Latest Posts"
-    read-more:  "read more"
-    on-word: "on"
-    contact: "Contact"
-    contact-page: "contact.md"
-    read-time: "min read"
-    comments: "comments"
-    go-to-home-page: "Go to the Home Page"
-    months:
-      january: "Jan"
-      february: "Feb"
-      march: "Mar"
-      april: "Apr"
-      may: "May"
-      june: "Jun"
-      july: "Jul"
-      august: "Aug"
-      september: "Sep"
-      october: "Oct"
-      november: "Nov"
-      december : "Dec"
-  it:
-    latest-posts:  "Ultimi Posts"
-    read-more:  "leggi"
-    on-word: "su"
-    contact: "Contatta"
-    contact-page: "contatta.md"
-    read-time: "min di lettura"
-    comments: "commenti"
-    go-to-home-page: "Vai alla Pagina Iniziale"
-    months:
-      january: "Gen"
-      february: "Feb"
-      march: "Mar"
-      april: "Apr"
-      may: "Mag"
-      june: "Giu"
-      july: "Lug"
-      august: "Ago"
-      september: "Set"
-      october: "Ott"
-      november: "Nov"
-      december : "Dic"
-
-defaults:
-  -
-    scope:
-      type: "posts"
-    values:
-      lang: "en"
-      category: articles
+images: '/assets/images'
