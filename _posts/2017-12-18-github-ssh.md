@@ -1,12 +1,15 @@
 ---
+bg: tools.jpg
 layout: post
-author: qutao
 title:  "github验证从https到ssh"
+crawlertitle: ""
+summary: ""
 date:   2017-12-18 10:18:30 +0800
 categories: soft config
-bg: tools.jpg
+tags: 工具配置
+author: qutao
 ---
-通过SSH连接github
+# 通过SSH连接github
 注意以下命令均在Git Bash下完成
 1.  生成ssh keys
  >生成方式*ssh-keygen -t rsa -C <your_email@example.com>*,
@@ -26,4 +29,4 @@ bg: tools.jpg
     User qutao
 
     IdentityFile  ~/.ssh/id_rsa
-5.  使用git clone git@github.com:username/repository克隆项目
+5.  使用`git clone git@github.com:username/repository`克隆项目

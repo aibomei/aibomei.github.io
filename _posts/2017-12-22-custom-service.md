@@ -1,9 +1,13 @@
 ---
+bg: tools.jpg
 layout: post
-author: qutao
 title:  "centos7 自定义服务"
+crawlertitle: ""
+summary: ""
 date:   2017-12-22 14:25:30 +0800
 categories: soft config
+tags: 工具配置
+author: qutao
 ---
 
 1. 自定义服务配置管理目录*/usr/lib/systemd/system*下新建xxx.service文件
