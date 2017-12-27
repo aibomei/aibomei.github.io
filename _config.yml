@@ -33,10 +33,36 @@ compress_html:
   clippings: all
   endings: all
 
+twitter:
+  username: aibomei
+#instagram_username:
+
+#linkedin_username: lorepirri
+#  site:
+facebook:
+  publisher_id: 1474191545979552
+  profile_id: 1474191545979552
+  app_id: 126080721296732
+  authors: [1474191545979552]
+
+# github on site
+github:
+  owner_url: https://github.com/aibomei
+
+#weixin
+#weixin:
+#  username: qutao
+
+#weibo
+weibo:
+  uid: goroutine
 
 sass:
   sass_dir: assets/_sass
   style: compressed
+
+author:
+  name: Tao Qu
 
 
 images: '/assets/images'
