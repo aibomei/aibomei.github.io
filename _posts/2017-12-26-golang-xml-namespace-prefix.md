@@ -10,7 +10,7 @@ tags: golang
 author: qutao
 ---
 
-https://github.com/golang/go/issues/11496
+[https://github.com/golang/go/issues/11496][1]
 
 示例使用链接中的示例, 我遇到的问题跟这个一样。
 {% highlight go %}
@@ -56,3 +56,5 @@ type Person2 struct {
 }  
 {% endhighlight %}
 NS变量在调用Marshal前赋值, 然后把Person的数据拷贝到Person2中即可, 十分麻烦。
+
+[1]: https://github.com/golang/go/issues/11496
