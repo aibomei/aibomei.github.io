@@ -10,9 +10,9 @@ tags: 工具配置
 author: qutao
 ---
 # 通过SSH连接github
-注意以下命令均在Git Bash下完成
+注意以下命令均在`Git Bash`下完成
 1.  生成ssh keys
- >生成方式*ssh-keygen -t rsa -C <your_email@example.com>*,
+ >生成方式*ssh-keygen -t rsa -C <your_email@example.com> -f </path/filename>*,
  >默认路径是*c:/user/username/.ssh*, 默认文件名是id_rsa. 有提示输入密码, 我们暂时不要密码, 所以一路回车, 最后会在路径下生成两个文件, id_rsa和id_rsa.pub, pub是公钥, 是要发给外部的.
 2.  把SSH key加到ssh-agent
 	* 开启ssh-agent, Windows下面命令是*eval $(ssh-agent -s)*, 成功会提示”Agent pid id”
