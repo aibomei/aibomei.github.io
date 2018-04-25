@@ -17,14 +17,14 @@ var c = make(chan int) // unbuffered channel, read happens before write
 // close channel happens before read???
 var a string
 func f() {
-  a = "hello, world" // (1)
-  <-c // (2)
+a = "hello, world" // (1)
+<-c // (2)
 }
 
 func main() {
-  go f()
-  c <- 0 // (3)
-  fmt.Println(a) // (4)
+go f()
+c <- 0 // (3)
+fmt.Println(a) // (4)
 }
 {% endhighlight %}
 
