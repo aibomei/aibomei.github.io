@@ -9,8 +9,8 @@ categories: language go
 tags: golang
 author: qutao
 ---
-
 happens begore in golang
+
 {% highlight go %}
 var c = make(chan int) // unbuffered channel, read happens before write
 //var c = make(chan int, 1) // buffered channel, write happens before read
@@ -30,4 +30,4 @@ func main() {
 
 上例中，*unbuffered channel*能保证read操作发生在write之前，所以操作2发生在3之前，可以保证输出"hello, world"；
 
-*buffered channel*write发生在read之前，所以操作3在2之前，输出结果为""。
+*buffered channel*的write发生在read之前，所以操作3在2之前，输出结果为空。
